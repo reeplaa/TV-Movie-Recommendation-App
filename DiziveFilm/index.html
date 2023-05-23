@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dizi/Film Öneri Uygulaması</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="cods.js"></script>
+</head>
+<body>
+    <h1>Dizi/Film Öneri Uygulaması</h1>
+
+    <div class="container">
+        <label for="turu">Dizi/Film Seçin:</label>
+        <select id="turu" onchange="turuDegisti()">
+            <option value="">Seçiniz...</option>
+            <option value="Dizi">Dizi</option>
+            <option value="Film">Film</option>
+        </select>
+
+        <div id="kategoriDiv" style="display: none;">
+            <label for="kategori">Kategori Seçiniz:</label>
+            <select id="kategori">
+                <option value="">Seçiniz...</option>
+                <option value="Aksiyon">Aksiyon</option>
+                <option value="Komedi">Komedi</option>
+                <option value="Drama">Drama</option>
+            </select>
+        </div>
+
+        <button onclick="oneriGoster()">Bana İzleyebileceğim Bişey Göster</button>
+    </div>
+
+    <div id="result"></div>
+    <h5>-Alper Dağdelen-</h5>
+</body>
+</html>
